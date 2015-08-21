@@ -1,6 +1,6 @@
 {
   "ProjectName": "Techie Me",
-  "ProjectGuid": "16f20880-2099-4212-ba3e-002520bd6776",
+  "ProjectGuid": "77b3eed2-03d9-4532-808c-835328d6c3e9",
   "projectVersion": 1,
   "AppIdentifier": "com.telerik.TechieMe",
   "DisplayName": "Techie Me",
@@ -32,8 +32,8 @@
     "ID_CAP_WEBBROWSERCOMPONENT"
   ],
   "WP8Requirements": [],
-  "WP8PublisherID": "{30e82f65-d8c8-42ce-89f3-c523d2584cef}",
-  "WP8ProductID": "{922ca48d-50ce-4b0d-bb01-527aa2ee0908}",
+  "WP8PublisherID": "{cf32a59d-4490-4fa2-9103-cafe1fef0d65}",
+  "WP8ProductID": "{791c9507-c421-4eea-97d6-243e628b94bb}",
   "WPSdk": "8.0",
   "WP8PackageIdentityName": "1234Telerik.TechieMe",
   "WP8WindowsPublisherName": "CN=Telerik",

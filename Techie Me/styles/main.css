@@ -1,0 +1,118 @@
+.expand {
+    padding: 0 100% 100% 0;
+    text-decoration: none;
+}
+.smallProfile {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.largeProfile {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+img {
+    max-width: 100%;
+}
+pre {
+    overflow-x: hidden
+}
+#update-photo {
+    width: 99%;
+}
+#category-list li,
+#sub-category-list li,
+#post-list li {
+    padding-left: 10px;
+}
+#splash {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    text-align: center;
+}
+div[data-role="view-title"] {
+    color: black !important;
+}
+div[data-role="navbar"] {
+    background-color: #A9D0F5 !important;
+    /*background-color: lightgray !important;*/
+}
+div[data-role="navbar"] > h4 {
+    background-color: white !important;
+    /*background-color: lightgray !important;*/
+}
+a[data-role="backbutton"] {
+    background-color: #55a7f4 !important;
+}
+a[data-role="backbutton"] > span {
+    color: black;
+}
+#menuDiv {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2px;
+    text-align: center;
+    width : 100%;
+}
+#menuDiv > button {
+    background-color: #55a7f4 !important;
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+}
+#homePage {
+    font-size: 48px;
+    font-family: "Confetti";
+    padding: 30px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    color: blue;
+}
+#mainBody > div {
+    background: linear-gradient(lightblue, white);
+    /* Standard syntax (must be last) */
+}
+.expanding {
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none !important;
+}
+.expanding > li:hover {
+    background-color: #A9D0F5;
+}
+@font-face {
+    font-family: 'Confetti';
+    src: url('mona.otf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+#aboutuscontent {
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+#copyright {
+    position: absolute;
+    bottom: 0;
+}
+#homeButton {
+    padding: .5em .8em;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    background-color: #55a7f4;
+    vertical-align: middle;
+    display: inline-block;
+    margin: .1rem;
+    height: 33px;
+    top: 5px;
+}

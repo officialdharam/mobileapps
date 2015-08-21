@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!--<link href="styles/kendo.common.min.css" rel="stylesheet" />-->
+    <link href="styles/main.css" rel="stylesheet" />
+    <script src="cordova.js"></script>
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+    <!--<script src="js/data.js"></script>-->
+    <script src="js/app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <script id="category-template" type="text/x-kendo-template">
+        <a href="\#view-sub-category?slug=${id}" class="expanding">
+            <li style="font-weight: 700">
+                #: name # &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-forward"></i>
+            </li>
+        </a>
+    </script>
+    <script id="subcategory-template" type="text/x-kendo-template">
+        <a href="\#view-sub-category-posts?slug=${id}" class="expanding">
+            <li style="font-weight: 700">
+                #: name # &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-forward"></i>
+            </li>
+        </a>
+    </script>
+    <script id="posts-template" type="text/x-kendo-template">
+        <a href="\#view-post?slug=${url}" class="expanding">
+            <li style="font-weight: 700">
+                #: name # &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-forward"></i>
+            </li>
+        </a>
+    </script>
+    <div id="all-categories" data-role="view" data-title="Categories" data-show="window.getCategories">
+        <header data-role="header">
+            <div data-role="navbar">
+                <a data-align="left" data-role="backbutton"><i class="fa fa-arrow-left"></i></a>
+                <div data-role="view-title"></div>
+                
+            </div>
+        </header>
+        <ul id="category-list" data-role="listview"></ul>
+    </div>
+    <div id="view-sub-category" data-role="view" data-title="Sub Category List" data-show="window.getSubCategories">
+        <header data-role="header">
+            <div data-role="navbar">
+                <a data-align="left" data-role="backbutton"><i class="fa fa-arrow-left"></i></a>
+                <div data-role="view-title"></div>
+                
+            </div>
+        </header>
+        <h2 id="categoryName"></h2>
+        <ul id="sub-category-list" data-role="listview"></ul>
+    </div>
+    <div id="view-sub-category-posts" data-role="view" data-title="Post List" data-show="window.getPosts">
+        <header data-role="header">
+            <div data-role="navbar">
+                <a data-align="left" data-role="backbutton"><i class="fa fa-arrow-left"></i></a>
+                <div data-role="view-title"></div>
+               
+            </div>
+        </header>
+        <ul id="post-list" data-role="listview"></ul>
+    </div>
+    <div id="view-post" data-role="view" data-title="Post" data-show="window.getPost">
+        <header data-role="header">
+            <div data-role="navbar" id="navbar">
+                <a data-align="left" data-role="backbutton"><i class="fa fa-arrow-left"></i></a>
+                <div data-role="view-title"></div>               
+            </div>
+        </header>
+        <div id="post" style="block"></div>
+    </div>
+    <div data-role="modalview" id="goback" style="width: 90%;">
+        <div data-role="header">
+            <div data-role="navbar">
+                <span>Oops! The network is lazy</span>
+            </div>
+        </div>
+        <h4>Seems like there is some connection issue! </h4>
+        <div align="center">
+            <a data-role="backbutton" data-align="center" style="margin-bottom: 5px;">Close</a>
+        </div>
+    </div>
+</body>
+
+</html>
